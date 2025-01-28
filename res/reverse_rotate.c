@@ -6,7 +6,7 @@
 /*   By: irobinso <irobinso@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/20 13:05:31 by irobinso          #+#    #+#             */
-/*   Updated: 2025/01/28 09:32:56 by irobinso         ###   ########.fr       */
+/*   Updated: 2025/01/28 12:50:17 by irobinso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ void	rrb(t_stacks *stacks)
 // rra and rrb at the same time
 void	rrr(t_stacks *stacks)
 {
-	/*int	temp;
+	int	temp;
 	int	i;
 
 	if (stacks->size_a < 2 || stacks->size_b < 2)
@@ -74,8 +74,6 @@ void	rrr(t_stacks *stacks)
 		i--;
 	}
 	stacks->stack_b[0] = temp;
-	write(1, "rrr\n", 4);*/
-	rra(stacks);
-	rrb(stacks);
+	write(1, "rrr\n", 4);
 	printf("rrr\n");
 }
