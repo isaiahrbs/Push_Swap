@@ -6,7 +6,7 @@
 /*   By: irobinso <irobinso@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/20 13:05:31 by irobinso          #+#    #+#             */
-/*   Updated: 2025/01/28 12:50:17 by irobinso         ###   ########.fr       */
+/*   Updated: 2025/01/29 00:06:27 by irobinso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	rra(t_stacks *stacks)
 		i--;
 	}
 	stacks->stack_a[0] = temp;
-	printf("rrb\n");
+	printf("rra\n");
 }
 
 // Reverse rotate B (last element becomes first)
@@ -74,6 +74,5 @@ void	rrr(t_stacks *stacks)
 		i--;
 	}
 	stacks->stack_b[0] = temp;
-	write(1, "rrr\n", 4);
 	printf("rrr\n");
 }

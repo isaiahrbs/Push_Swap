@@ -6,7 +6,7 @@
 /*   By: irobinso <irobinso@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/13 11:37:08 by irobinso          #+#    #+#             */
-/*   Updated: 2025/01/27 21:44:52 by irobinso         ###   ########.fr       */
+/*   Updated: 2025/01/29 00:16:13 by irobinso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <unistd.h>
 # include <stdio.h>
 # include <limits.h>
+# include <ctype.h>
 # include "../libraries/libft/inc/libft.h"
 
 typedef struct s_stacks
@@ -36,13 +37,15 @@ long	ft_safe_atol(const char *str);
 
 void	free_stacks(t_stacks *stacks);
 
+void	free_shelf(char **numbers);
+
 void	print_stacks(t_stacks *stacks);
 
 void	radix_sort(t_stacks *stacks);
 
 int		sorting(t_stacks *stacks);
 
-int		check_numbers_int(char **numbers);
+int		check_numbers_int(char **numbers, int count);
 
 int		contains_space(char **strs, int count);
 
@@ -56,7 +59,11 @@ int		find_min(int *stack, int size);
 
 int		find_max(int *stack, int size);
 
-//int		limit_check(int argc, char **argv)
+int		calculate_length(int argc, char **argv);
+
+char	*concat_args(int argc, char **argv);
+
+int		is_sorted(t_stacks *stacks);
 
 //---stack manipulation operations---//
 

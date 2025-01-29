@@ -6,7 +6,7 @@
 #    By: irobinso <irobinso@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/20 13:49:52 by irobinso          #+#    #+#              #
-#    Updated: 2025/01/27 21:40:40 by irobinso         ###   ########.fr        #
+#    Updated: 2025/01/28 18:46:12 by irobinso         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,7 +39,7 @@ LIBFT = $(LIBFTDIR)/libft.a
 
 # Compiler and flags
 CC = cc
-CFLAGS = -Wall -Wextra -Werror -I$(INCDIR) -I$(LIBFTDIR)/include
+CFLAGS = -Wall -Wextra -Werror -g -I$(INCDIR) -I$(LIBFTDIR)/include
 
 # Clean up command
 RM = rm -f

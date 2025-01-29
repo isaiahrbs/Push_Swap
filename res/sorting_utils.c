@@ -6,7 +6,7 @@
 /*   By: irobinso <irobinso@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/27 21:35:25 by irobinso          #+#    #+#             */
-/*   Updated: 2025/01/28 12:54:14 by irobinso         ###   ########.fr       */
+/*   Updated: 2025/01/29 00:05:48 by irobinso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,7 @@ int	sort_two(t_stacks *stacks)
 	if (stacks->size_a != 2)
 		return (0);
 	if (stacks->stack_a[0] > stacks->stack_a[1])
-	{
 		sa(stacks);
-		printf("sa");
-	}
 	return (1);
 }
 

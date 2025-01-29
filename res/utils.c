@@ -6,7 +6,7 @@
 /*   By: irobinso <irobinso@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/27 21:30:16 by irobinso          #+#    #+#             */
-/*   Updated: 2025/01/27 22:12:59 by irobinso         ###   ########.fr       */
+/*   Updated: 2025/01/28 20:47:36 by irobinso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,15 +45,13 @@ long	ft_safe_atol(const char *str)
 	}
 	while (str[i] >= '0' && str[i] <= '9')
 	{
-		if (result > (LONG_MAX - (str[i] - '0')) / 10)
-			return (LONG_MAX);
 		result = result * 10 + (str[i] - '0');
 		i++;
 	}
 	return (result * sign);
 }
 
-void	print_stacks(t_stacks *stacks)
+/*void	print_stacks(t_stacks *stacks)
 {
 	int	i;
 	int	max_size;
@@ -78,6 +76,23 @@ void	print_stacks(t_stacks *stacks)
 		i++;
 	}
 	printf("-------------------\n\n\n");
+}*/
+
+int	calculate_length(int argc, char **argv)
+{
+	int	total_length;
+	int	i;
+
+	total_length = 0;
+	i = 1;
+	while (i < argc)
+	{
+		total_length = total_length + ft_strlen(argv[i]);
+		if (i < argc - 1)
+			total_length++;
+		i++;
+	}
+	return (total_length);
 }
 
 //find the minimum number in the stack
