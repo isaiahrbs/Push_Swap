@@ -66,19 +66,20 @@ Use the **print stack function** to observe the state of the stack before and af
 
 Input:
 ```bash
-./push_swap 4 67 3 87 23
+y
 ```
 
 Output:
 ```text
 ra
 ra
-rb
+pb
 ra
 ra
 pb
 rra
-...
+pa
+pa
 ```
 
 ---
