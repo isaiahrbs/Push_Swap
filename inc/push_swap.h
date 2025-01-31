@@ -6,7 +6,7 @@
 /*   By: irobinso <irobinso@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/13 11:37:08 by irobinso          #+#    #+#             */
-/*   Updated: 2025/01/29 00:16:13 by irobinso         ###   ########.fr       */
+/*   Updated: 2025/01/30 20:57:26 by irobinso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,15 +45,13 @@ void	radix_sort(t_stacks *stacks);
 
 int		sorting(t_stacks *stacks);
 
-int		check_numbers_int(char **numbers, int count);
-
 int		contains_space(char **strs, int count);
 
 int		is_valid_number(char *str);
 
 int		count_numbers(char *str);
 
-int		check_duplicates(int *arr, int size);
+int		check_duplicates(char **number_list);
 
 int		find_min(int *stack, int size);
 
@@ -63,7 +61,19 @@ int		calculate_length(int argc, char **argv);
 
 char	*concat_args(int argc, char **argv);
 
-int		is_sorted(t_stacks *stacks);
+int		is_sorted(char **number_list);
+
+int		proceed_checks(int argc, char **argv);
+
+int		is_only_spaces(char *str);
+
+int		is_empty(char **numbers);
+
+int		is_number(char **numbers);
+
+int		check_numbers_int(char **numbers);
+
+int		init_stacks(int argc, char **argv, t_stacks *stacks);
 
 //---stack manipulation operations---//
 

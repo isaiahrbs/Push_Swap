@@ -6,7 +6,7 @@
 #    By: irobinso <irobinso@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/20 13:49:52 by irobinso          #+#    #+#              #
-#    Updated: 2025/01/28 18:46:12 by irobinso         ###   ########.fr        #
+#    Updated: 2025/01/30 20:36:28 by irobinso         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,6 +28,8 @@ SRCS = $(SRCDIR)/main.c \
        $(SRCDIR)/rotate.c \
        $(SRCDIR)/reverse_rotate.c \
        $(SRCDIR)/swap.c \
+	   $(SRCDIR)/proceed_checks.c \
+	   $(SRCDIR)/init_stacks.c \
        $(SRCDIR)/sorting.c \
 	   $(SRCDIR)/sorting_utils.c
 

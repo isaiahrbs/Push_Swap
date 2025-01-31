@@ -73,11 +73,13 @@ Output:
 ```text
 ra
 ra
-rb
+pb
 ra
 ra
 pb
 rra
+pa
+pa
 ...
 ```
 
