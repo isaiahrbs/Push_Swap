@@ -22,7 +22,7 @@ void	sa(t_stacks *stacks)
 	temp = stacks->stack_a[0];
 	stacks->stack_a[0] = stacks->stack_a[1];
 	stacks->stack_a[1] = temp;
-	printf("sa\n");
+	ft_printf("sa\n");
 }
 
 // Swap first two elements of stack B
@@ -35,7 +35,7 @@ void	sb(t_stacks *stacks)
 	temp = stacks->stack_b[0];
 	stacks->stack_b[0] = stacks->stack_b[1];
 	stacks->stack_b[1] = temp;
-	printf("sb\n");
+	ft_printf("sb\n");
 }
 
 // sa and sb at the same time
@@ -51,5 +51,5 @@ void	ss(t_stacks *stacks)
 	temp = stacks->stack_b[0];
 	stacks->stack_b[0] = stacks->stack_b[1];
 	stacks->stack_b[1] = temp;
-	printf("ss\n");
+	ft_printf("ss\n");
 }

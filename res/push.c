@@ -34,7 +34,7 @@ void	pa(t_stacks *stacks)
 	}
 	stacks->size_a++;
 	stacks->size_b--;
-	printf("pa\n");
+	ft_printf("pa\n");
 }
 
 // Push from A to B
@@ -59,5 +59,5 @@ void	pb(t_stacks *stacks)
 	}
 	stacks->size_b++;
 	stacks->size_a--;
-	printf("pb\n");
+	ft_printf("pb\n");
 }

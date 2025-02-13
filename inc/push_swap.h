@@ -6,7 +6,7 @@
 /*   By: irobinso <irobinso@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/13 11:37:08 by irobinso          #+#    #+#             */
-/*   Updated: 2025/01/30 20:57:26 by irobinso         ###   ########.fr       */
+/*   Updated: 2025/02/06 18:23:13 by irobinso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,6 +74,9 @@ int		is_number(char **numbers);
 int		check_numbers_int(char **numbers);
 
 int		init_stacks(int argc, char **argv, t_stacks *stacks);
+/*
+void	print_stacks(t_stacks *stacks);
+*/
 
 //---stack manipulation operations---//
 

@@ -28,7 +28,7 @@ void	rra(t_stacks *stacks)
 		i--;
 	}
 	stacks->stack_a[0] = temp;
-	printf("rra\n");
+	ft_printf("rra\n");
 }
 
 // Reverse rotate B (last element becomes first)
@@ -47,7 +47,7 @@ void	rrb(t_stacks *stacks)
 		i--;
 	}
 	stacks->stack_b[0] = temp;
-	printf("rrb\n");
+	ft_printf("rrb\n");
 }
 
 // rra and rrb at the same time
@@ -74,5 +74,5 @@ void	rrr(t_stacks *stacks)
 		i--;
 	}
 	stacks->stack_b[0] = temp;
-	printf("rrr\n");
+	ft_printf("rrr\n");
 }
