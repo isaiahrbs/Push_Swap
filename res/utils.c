@@ -6,7 +6,7 @@
 /*   By: irobinso <irobinso@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/27 21:30:16 by irobinso          #+#    #+#             */
-/*   Updated: 2025/02/11 18:46:46 by irobinso         ###   ########.fr       */
+/*   Updated: 2025/01/30 21:41:02 by irobinso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,8 +38,8 @@ char	*concat_args(int argc, char **argv)
 	result[total_length] = '\0';
 	return (result);
 }
-/*
-void	print_stacks(t_stacks *stacks)
+
+/*void	print_stacks(t_stacks *stacks)
 {
 	int	i;
 	int	max_size;
@@ -64,8 +64,7 @@ void	print_stacks(t_stacks *stacks)
 		i++;
 	}
 	printf("-------------------\n\n\n");
-}
-*/
+}*/
 
 int	calculate_length(int argc, char **argv)
 {
